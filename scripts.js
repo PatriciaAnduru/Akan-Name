@@ -30,12 +30,12 @@ function akaned(){
      document.getElementById("resultintro").style.display = "none";
     }
    else if( invalidDay==true) {  
-     document.getElementById('result').textContent = "*Please enter a Valid Day Number from 1 - 31";
+     document.getElementById('result').textContent = "*ENTER VALID DAY (1-31)!";
      document.getElementById("result").style.color = "red";      
      document.getElementById("resultintro").style.display = "none";
    }
    else if ( invalidMonth==true ) {
-     document.getElementById('result').textContent = "*Please enter a Valid Month Number from 1 - 12";
+     document.getElementById('result').textContent = "*ENTER VALID MONTH(1 - 12)!";
      document.getElementById("result").style.color = "red";
      document.getElementById("resultintro").style.display = "none";
     }
@@ -67,5 +67,4 @@ function akaned(){
    else {
      alert("Whoops!! We can not compute your details SORRY!!");
     }
-
 }

@@ -13,11 +13,10 @@
   <div class="jumbotron">
     <h1 id="intro">Akan Names Generation</h1>
   <img src="africanames.jpeg" alt="pic">
-
     <p class=" text-justify"> The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.<a href="https://en.wikipedia.org/wiki/Akan_names">Learn more</a> </p>
   </div>   
   <div class="calc bg-info" id="akan">
-    <div class="righty">
+    <div class="align">
       <form class="m-2" id="form">
         <label class="space">Day: </label>
           <input class="inp" type="text" id="day" placeholder="day"><br>
@@ -26,21 +25,20 @@
         <label class="space">Year: </label>
           <input class="inp" type="text" id="year" placeholder="year e.g 1999"><br>                
         <label class="space">Gender: </label>
-        <select class="selekta" id="gender">
+        <select class="select" id="gender">
           <option value="selectdefault">Gender</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
         </select><br>
-          <input class=" btn mt-2" type="submit" value="Reset" onclick="this.form.reset();" >
-         <a href="#result"><input class=" btn mt-2 ml-2" type="submit" onclick="akaned();" value="Submit" id="subbtn"></a>
+          <input class="reset" type="submit" value="Reset" onclick="this.form.reset();" >
+         <a href="#result"><input type="submit" onclick="akaned();" value="Submit" id="go"></a>
       </form>
-    <div class="res">
+    <div class="rsln">
       <p class=" font-weight-bold" id="resultintro">Fill the form and see your Akan Name:</p>
       <h1 class=" m-0 text-capitalize text-center" id="result"></h1>
     </div>           
     </div>   
-
-    <div class="lefty text-center">
+    <div class="away text-center">
       <table class=" table table-bordered table-hover bg-light text-center ml-auto mr-auto my-0" id="names">
         <caption class="bg-light text-dark text-center font-weight-bold">
           <em>Days of the week male and female Akan names.</em>

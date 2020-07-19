@@ -1,5 +1,68 @@
-image{
-width: 250px;
-height: 250px;
-width: 300px;
+body{
+    height: 100%;
+    background-size: contain;
 }
+img{
+    width: 100%;
+}
+.intro,table,.calc,form{
+    overflow: hidden;
+}
+.away{
+    width: 100%;
+}
+.align{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+form{
+    height: 100%;
+    width: 40%;
+}
+caption{
+    border: 1px solid gray;
+}
+.rsln{
+    align-self: center;
+    width: 60%;
+}
+.space{
+    width: 100px;
+}
+.inp,.select{
+    width: 150px;
+}
+#go{
+    width: 100px;
+}
+#result{
+    font-size: 40px;
+    color: white;
+}
+#resultintro{
+    font-size: 25px;
+    color: white;
+}
+/* @media only screen and (max-width: 480px) {
+    .navy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .align{
+        display: flex;
+        flex-direction: column;          
+    }
+    form,.rsln{
+        width: 100%;
+        align-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 324px){
+    .calc{
+        overflow-x: scroll;
+    }
+  } */
