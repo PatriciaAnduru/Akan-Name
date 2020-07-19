@@ -43,7 +43,7 @@ function akaned(){
            //above boolean: check for Sept 31 and Nov 31 (non-existing dates)
   
     if ( invalidAll==true ) {
-     document.getElementById('result').textContent = "*Kindly Enter all Details Correctly!";
+     document.getElementById('result').textContent = "*INVALID DETAILS!";
      document.getElementById("result").style.color = "red";
      document.getElementById("resultintro").style.display = "none";
     }
@@ -58,12 +58,12 @@ function akaned(){
      document.getElementById("resultintro").style.display = "none";
     }
    else if ( invalidYear==true ) {
-     document.getElementById('result').textContent = "*Please enter a Valid Year or Current Year";
+     document.getElementById('result').textContent = "*INVALID YEAR";
      document.getElementById("result").style.color = "red";
      document.getElementById("resultintro").style.display = "none";
     }
    else if ( invalidGender==true ) {
-     document.getElementById('result').textContent = "*please select a gender in order to get your Akan name";
+     document.getElementById('result').textContent = "*SELECT GENDER";
      document.getElementById("result").style.color = "red";
      document.getElementById("resultintro").style.display = "none";
      }
@@ -74,12 +74,12 @@ function akaned(){
      }
    else if ( validFemale==true ) {
      document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +femaleAkanName[actualBirthDay];
-     document.getElementById("result").style.color = "white";     
+     document.getElementById("result").style.color = "green";     
      document.getElementById("resultintro").style.display = "none";
     }
    else if ( validMale==true) {
      document.getElementById('result').textContent = "You were born on "+ akanDay+ " and your Akan name is " +maleAkanName[actualBirthDay];
-     document.getElementById("result").style.color = "white";    
+     document.getElementById("result").style.color = "green";    
      document.getElementById("resultintro").style.display = "none";
     }
    else {
