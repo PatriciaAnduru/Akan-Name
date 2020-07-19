@@ -65,7 +65,7 @@ function akaned(){
      document.getElementById("resultintro").style.display = "none";
     }
    else {
-     alert("Wow!!! It Seems You are either an old Being with no known date of birth or from the Future! Cannot Compute your Akan Name");
+     alert("Whoops!! We can not compute your details SORRY!!");
     }
 
 }
