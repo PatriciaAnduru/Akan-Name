@@ -16,7 +16,7 @@ Patricia Adhiambo Anduru
 ## Technologies Used
 {This page was created using HTML,JAVASCRIPT, BOOTSTRAP and CSS. HTML was used for the structure of the Page outlook while CSS and BOOTSTRAP was used to style the web application and JAVASCRIPT was used to make the page responsive.}
 ## Link
- https://patriciaanduru.github.io/Portfolio/
+https://patriciaanduru.github.io/Akan-Name/
 ## Support and contact details
 Email andurupatricia@gmail.com 
 Phone +254704827097 /  0735454819
