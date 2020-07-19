@@ -1,35 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="scripts.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-        <title>Akan Names</title>
-    </head>
-    <body>
-        <h1>Akan Names</h1>
-    <p>In many parts of Ghana, and elsewhere in West Africa, a person’s name is determined by the day of the week on which she/he was born.Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
-    <p>Enter your birthdate and gender below to read and hear your day name in Ashanti Twi, a dialect of Akan and the most widely spoken language in Ghana:</p>
-    <form>
-        <div class="forms">
-          <label for="day">Day.</label><br>
-          <input type="number" class="form" id="dd"><br>
-        </div>
-        <div class="forms">
-          <label for="pwd">Month.</label><br>
-          <input type="number" class="form" id="mm"><br>
-        </div>
-        <div class="forms">
-          <label for="pwd">Year.</label><br>
-          <input type="number" class="form" id="yy"><br>
-        </div>
+<html lang="en">
+<head>
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan names</title>
+</head>
+<body>
+<div class="container py-2">
+  <div class="intro text-center bg-light">
+    <h1 id="intro">Akan Names</h1>
+    <p class=" text-justify">
+        In many parts of Ghana, and elsewhere in West Africa, a person’s name is determined by the day of the week on which she/he was born.
+        Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</p>
+  </div>   
+
+  <div class="calc bg-info" id="akan">
+    <div class="righty">
+      <form class="m-2" id="form">
+        <label class="space">Day: </label>
+          <input class="inp" type="text" id="day" placeholder="day"><br>
+        
+        <label class="space">Month: </label>
+          <input class="inp" type="text" id="month" placeholder="month"><br>
+        
+        <label class="space">Year: </label>
+          <input class="inp" type="text" id="year" placeholder="year e.g 1999"><br>                
+        
+        <label class="space">Gender: </label>
+        <select class="selekta" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select><br>
+          <input class=" btn mt-2" type="submit" value="Reset" onclick="this.form.reset();" >
+         <a href="#result"><input class=" btn mt-2 ml-2" type="submit" onclick="akaned();" value="Submit" id="subbtn"></a>
       </form>
-      <label>Gender:</label>
-      <select name="gender" id="gender">
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-      </select> <br>
-      <button type="submit" class="click" onclick="day()">Go</button>
-  
-    </body>
+    <div class="res">
+      <p class=" font-weight-bold" id="resultintro">Fill the form and see your results Here</p>
+      <h1 class=" m-0 text-capitalize text-center" id="result"></h1>
+    </div>           
+    </div>   
+
+    <div class="lefty text-center">
+      <table class=" table table-bordered table-hover bg-light text-center ml-auto mr-auto my-0" id="names">
+        <caption class="bg-light text-dark text-center font-weight-bold">
+          <em>Days of the week male and female Akan names.</em>
+        </caption>
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Day Of the Week</th>
+            <th scope="col">Female</th>
+            <th scope="col">Male</th>
+              </tr>
+        </thead>
+        <tbody>
+          <!--table row Sunday Names-->
+          <tr>
+            <td>Sunday</td>
+            <td>Akosua</td>
+            <td>Kwasi</td>
+          </tr>
+          <!--table row Monday Names-->
+          <tr>
+            <td>Monday</td>
+            <td>Adwoa</td>
+            <td>Kwadwo</td>
+          </tr>
+          <!--table row Tusday Names-->
+          <tr>
+            <td>Tuesday</td>
+            <td>Abenaa</td>
+            <td>Kwabena</td>
+          </tr>
+          <!--table row Wednesday Names-->
+          <tr>
+            <td>Wednesday</td>
+            <td>Akua</td>
+            <td>Kwaku</td>
+          </tr>
+          <!--table row Thursday Names-->
+          <tr>
+            <td>Thursday</td>
+            <td>Yaa</td>
+            <td>Yaw</td>
+          </tr>
+          <!--table row Friday Names-->
+          <tr>
+            <td>Friday</td>
+            <td>Afua</td>
+            <td>Kofi</td>
+          </tr>
+          <!--table row Saturday Names-->
+          <tr>
+            <td>Saturday</td>
+            <td>Ama</td>
+            <td>Kwame</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  </div>
+    <p class=" text-white">Copyright &copy; Patricia Anduru</p>
+  </div>
+
+</div>
+
+</body>
 </html>
