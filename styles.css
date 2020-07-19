@@ -36,11 +36,7 @@ caption{
 #go{
     width: 100px;
 }
-#result{
-    font-size: 40px;
-    color: white;
-}
-#resultintro{
+#intros{
     font-size: 25px;
     color: white;
 }
