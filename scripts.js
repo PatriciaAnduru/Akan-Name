@@ -12,8 +12,7 @@ function akaned(){
     var year = document.getElementById("year").value;
     var gender = document.getElementById("gender").value;
     var date = new Date(year +"/" + month + "/"+day);
-    var actualBirthDay = date.getDay();
-    // alert(actualBirthDay);                          
+    var actualBirthDay = date.getDay();                       
     var akanDay = dayOfWeek[actualBirthDay];     
     var invalidMonth = ( month<1 || month>12 || ((document.getElementById("month").value)=="") );        
     var invalidDay = ( day<1 || day>31 || ((document.getElementById("day").value)=="") );                 
@@ -25,8 +24,6 @@ function akaned(){
     var febDates = ( ((month===2)&&(day==30)) || ((month===2)&&(day==31)) );
     var aprJune =  ( ((month===4)&&(day==31)) || ((month===6)&&(day==31)) );
     var septOct =  ( ((month===9)&&(day==31)) || ((month===11)&&(day==31)) );
-
-  
     if ( invalidAll==true ) {
      document.getElementById('result').textContent = "*ENTER DETAILS!";
      document.getElementById("result").style.color = "red";
